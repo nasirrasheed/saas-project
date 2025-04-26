@@ -1,0 +1,54 @@
+/* Header.css */
+
+/* Header Container */
+header {
+  background-color: #1D4ED8; /* Tailwind's bg-blue-900 */
+  color: white;
+  padding: 16px 32px;
+}
+
+/* Navbar Styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px; /* max-w-5xl equivalent */
+  margin: 0 auto;
+}
+
+/* Branding Text */
+nav .text-2xl {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Navigation Links Container */
+nav .space-x-4 {
+  display: flex;
+  gap: 16px;
+}
+
+/* Navigation Links */
+nav a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for links */
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: underline;
+}
+
+/* Active state for links */
+nav a:focus, nav a:active {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
