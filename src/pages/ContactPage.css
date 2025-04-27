@@ -1,0 +1,97 @@
+/* ContactPage.css */
+
+/* Container for the entire contact page */
+.contact-page-container {
+    max-width: 48rem; /* max-width 768px */
+    margin: 0 auto;
+    padding: 2rem;
+    color: #1d4ed8; /* blue-900 */
+    transition: all 0.3s ease;
+  }
+  
+  /* Header Styles */
+  .contact-page-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, opacity 0.5s ease;
+  }
+  
+  /* Make the paragraph fade in with a delay */
+  .contact-page-container p {
+    font-size: 1rem;
+    color: #4b5563; /* gray-700 */
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* Form Input Fields */
+  .contact-page-container input,
+  .contact-page-container textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db; /* gray-300 */
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Focus States */
+  .contact-page-container input:focus,
+  .contact-page-container textarea:focus {
+    outline: none;
+    border-color: #2563eb; /* blue-500 */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4); /* blue-400 */
+  }
+  
+  /* Button Animation */
+  .contact-page-container button {
+    background-color: #2563eb; /* blue-500 */
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .contact-page-container button:hover {
+    background-color: #1d4ed8; /* blue-700 */
+    transform: scale(1.05);
+  }
+  
+  /* Mobile responsiveness adjustments */
+  @media (max-width: 768px) {
+    .contact-page-container {
+      padding: 1.5rem;
+    }
+  
+    .contact-page-container h1 {
+      font-size: 1.75rem;
+    }
+  
+    .contact-page-container p {
+      font-size: 0.875rem;
+    }
+  
+    .contact-page-container input,
+    .contact-page-container textarea {
+      padding: 0.675rem;
+    }
+  
+    .contact-page-container button {
+      padding: 0.875rem 2.5rem;
+      font-size: 0.875rem;
+    }
+  }
+  
+  /* Tablet or Larger Screen (up to 1024px) */
+  @media (max-width: 1024px) {
+    .contact-page-container {
+      max-width: 40rem; /* max-width 640px */
+    }
+  }
+  
