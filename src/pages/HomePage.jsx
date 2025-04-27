@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import JoinBetaForm from '../components/JoinBetaForm';
 import './HomePage.css';
 import useTitle from '../hooks/useTitle';

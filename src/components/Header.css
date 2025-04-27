@@ -1,54 +1,161 @@
-/* Header.css */
+/* Base styles */
+:root {
+  --primary-bg: #2563eb;
+  --primary-text: white;
+  --link-hover: rgba(255, 255, 255, 0.15);
+  --active-link: #facc15;
+  --mobile-bg: #1e3a8a;
+}
 
-/* Header Container */
-header {
-  background-color: #1D4ED8; /* Tailwind's bg-blue-900 */
-  color: white;
+.dark {
+  --primary-bg: #0f172a;
+  --primary-text: #e2e8f0;
+  --link-hover: rgba(255, 255, 255, 0.1);
+  --active-link: #facc15;
+  --mobile-bg: #1e293b;
+}
+
+.header {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
   padding: 16px 32px;
 }
 
-/* Navbar Styling */
-nav {
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1280px; /* max-w-5xl equivalent */
+  max-width: 1280px;
   margin: 0 auto;
+  position: relative;
 }
 
-/* Branding Text */
-nav .text-2xl {
+button.theme-toggle {
+  display: none;
+}
+.brand {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  color: var(--primary-text);
 }
 
-/* Navigation Links Container */
-nav .space-x-4 {
+/* Desktop Menu */
+.desktop-menu {
   display: flex;
-  gap: 16px;
+  gap: 24px;
 }
 
-/* Navigation Links */
-nav a {
+.desktop-link {
   font-size: 1rem;
   font-weight: 500;
-  color: white;
+  color: var(--primary-text);
   text-decoration: none;
   padding: 8px 12px;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.3s ease;
 }
 
-/* Hover effect for links */
-nav a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+.desktop-link:hover {
+  background-color: var(--link-hover);
   text-decoration: underline;
 }
 
-/* Active state for links */
-nav a:focus, nav a:active {
-  outline: none;
-  background-color: rgba(255, 255, 255, 0.2);
+.active-desktop-link {
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--active-link);
+}
+
+/* Actions (darkmode toggle + menu button) */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.theme-toggle, .menu-toggle {
+  background: none;
+  border: none;
+  color: var(--primary-text);
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.6;
+  z-index: 99;
+}
+
+/* Mobile Fullscreen Menu */
+.mobile-fullscreen-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--mobile-bg);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.close-menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: var(--primary-text);
+  cursor: pointer;
+}
+
+.mobile-link {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-text);
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.mobile-link:hover {
+  background-color: var(--link-hover);
+}
+
+.active-mobile-link {
+  background-color: var(--link-hover);
+  color: var(--active-link);
+}
+
+button.menu-toggle{
+  display: none;
+}
+/* Responsive */
+@media (max-width: 767px) {
+  .desktop-menu {
+    display: none;
+  }
+}
+@media (max-width: 767px){
+  button.menu-toggle{
+    display: block;
+  }
+  .nav-container{
+    gap:2px;
+    align-items: flex-start;
+  }
 }
