@@ -1,7 +1,7 @@
 import React from 'react';
 import useTitle from '../hooks/useTitle'; // <- Add this
 import { motion } from 'framer-motion'; // Import framer-motion for animations
-import './ContactPage.css';  // Import the stylesheet at the top
+import './css/ContactPage.css';  // Import the stylesheet at the top
 
 export default function ContactPage() {
   useTitle("Contact Us - FreelanceFinance"); // <- Set the page title

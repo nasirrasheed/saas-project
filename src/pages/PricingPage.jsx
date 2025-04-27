@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './PricingPage.css'; // Ensure this CSS file exists
+import './css/PricingPage.css'; // Ensure this CSS file exists
 import useTitle from '../hooks/useTitle'; // <- Add this only once
 
 const pricingPlans = [
