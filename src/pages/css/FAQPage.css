@@ -1,0 +1,79 @@
+/* FAQPage.css */
+
+/* Container for the FAQ page */
+.faq-page-container {
+    max-width: 48rem; /* Equivalent to max-w-4xl */
+    margin: 0 auto;
+    padding: 2rem;
+    color: #1d4ed8; /* blue-900 */
+  }
+  
+  /* Header Styles */
+  .faq-page-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Individual FAQ Styles */
+  .faq-question {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600;
+    color: #1d4ed8; /* blue-900 */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect on question */
+  .faq-question:hover {
+    color: #2563eb; /* blue-500 */
+  }
+  
+  /* Answer Styles */
+  .faq-answer {
+    font-size: 1rem;
+    color: #4b5563; /* gray-700 */
+    margin-top: 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid #2563eb; /* blue-500 */
+    animation: fadeIn 0.4s ease-out;
+  }
+  
+  /* FAQ Container */
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .faq-page-container {
+      padding: 1.5rem;
+    }
+  
+    .faq-page-container h1 {
+      font-size: 1.75rem;
+    }
+  
+    .faq-question {
+      font-size: 1rem;
+    }
+  
+    .faq-answer {
+      font-size: 0.875rem;
+    }
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

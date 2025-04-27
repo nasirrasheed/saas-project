@@ -1,4 +1,5 @@
 import useTitle from '../hooks/useTitle'; // <- Add this
+import './css/FAQPage.css';
 
 const faqs = [
   {
