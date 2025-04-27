@@ -1,0 +1,103 @@
+/* Container Styles */
+.container {
+    max-width: 80rem;  /* Set max width for the container */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  /* Heading Styles */
+  .heading-container {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .heading-container h1 {
+    font-size: 2.24m;
+    font-weight: 800;
+    color: #1D3A64;  /* Dark blue color */
+    margin-bottom: 1rem;
+  }
+  
+  .heading-container p {
+    font-size: 1.125rem;
+    color: #4A5568;  /* Dark gray */
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Card Grid Layout */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);  /* 1 column for mobile */
+    gap: 2rem;
+  }
+  
+  @media (min-width: 640px) {
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr);  /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .card-grid {
+      grid-template-columns: repeat(4, 1fr);  /* 4 columns for large screens */
+    }
+  }
+  
+  /* Card Styles */
+  .card {
+    background-color: white;
+    border: 1px solid #E2E8F0;  /* Light gray border */
+    border-radius: 0.5rem;  /* Rounded corners */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+    transition: all 0.3s ease;  /* Smooth transition for hover */
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);  /* Elevate on hover */
+  }
+  
+  /* Icon Container */
+  .card .icon-container {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* FontAwesome Icon Styling */
+  .card .icon {
+    font-size: 3.5rem;  /* Large icons */
+    color: #3B82F6;  /* Blue color */
+  }
+  
+  /* Card Title */
+  .card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1E40AF;  /* Dark blue */
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Card Text */
+  .card p {
+    color: #718096;  /* Light gray */
+    font-size: 1rem;
+  }
+  
+  /* Utility classes for spacing */
+  .mb-3 {
+    margin-bottom: 0.75rem;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  

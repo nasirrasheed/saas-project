@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
 import Header from './components/Header'; // Import the Header component
+import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import BlogPage from './pages/BlogPage';
@@ -9,6 +10,8 @@ import ContactPage from './pages/ContactPage';
 import FAQPage from './pages/FAQPage';
 import BlogPostPage from './pages/BlogPostPage'; // For individual blog posts
 import useTitle from './hooks/useTitle'; // Custom hook to set page title globally
+import '@fortawesome/fontawesome-free/css/all.min.css'; // assuming AboutPage is in the components folder
+
 
 function App() {
   // Default page title (you can use this for the home or root route)
@@ -41,6 +44,7 @@ function App() {
         {/* FAQ Page Route */}
         <Route path="/faq" element={<FAQPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
