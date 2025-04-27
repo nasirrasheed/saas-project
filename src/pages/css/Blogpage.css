@@ -1,0 +1,114 @@
+/* General Container Styles */
+.max-w-4xl {
+    max-width: 60rem; /* Ensures the page is not too wide */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  /* Blog Title */
+  .text-3xl {
+    font-size: 2.25rem;  /* Large font size for blog title */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1D3A64; /* Dark blue color */
+  }
+  
+  /* Spacing between blog posts */
+  .space-y-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Individual Blog Post */
+  .p-4 {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem; /* Rounded corners */
+    border: 1px solid #E2E8F0; /* Light gray border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for posts */
+    transition: box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  .p-4:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+  }
+  
+  /* Title of Blog Post */
+  .text-xl {
+    font-size: 1.5rem;  /* Font size for blog post title */
+    font-weight: 600;
+    color: #1D3A64; /* Dark blue for titles */
+    margin-bottom: 0.5rem;
+  }
+  
+  .text-xl:hover {
+    text-decoration: underline; /* Underline title on hover */
+  }
+  
+  /* Date of Blog Post */
+  .text-sm {
+    font-size: 0.875rem; /* Smaller text for the date */
+    color: #4A5568; /* Gray text color */
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Blog Post Summary */
+  .text-gray-700 {
+    color: #4A5568;  /* Light gray color for summary text */
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Read More Link */
+  .text-blue-700 {
+    color: #3B82F6; /* Blue color for the link */
+    font-size: 0.875rem; /* Smaller font size for the link */
+    text-decoration: underline;
+    transition: color 0.3s ease; /* Smooth transition for hover color */
+  }
+  
+  .text-blue-700:hover {
+    color: #1D4ED8; /* Darker blue on hover */
+  }
+  
+  /* Responsive Design for Tablets */
+  @media (max-width: 768px) {
+    .max-w-4xl {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  
+    .text-3xl {
+      font-size: 1.875rem; /* Slightly smaller blog title for smaller screens */
+    }
+  
+    .text-xl {
+      font-size: 1.25rem; /* Slightly smaller post title on smaller screens */
+    }
+  }
+  
+  /* Responsive Design for Mobile Devices */
+  @media (max-width: 480px) {
+    .max-w-4xl {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    .text-3xl {
+      font-size: 1.5rem; /* Further reduce blog title size for mobile */
+    }
+  
+    .p-4 {
+      padding: 0.75rem; /* Reduced padding for blog posts */
+    }
+  
+    .text-xl {
+      font-size: 1.125rem; /* Further reduce post title size for mobile */
+    }
+  }
+  

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import './css/Blogpage.css';
 import blogPosts from '../data/blogPosts';
 import useTitle from '../hooks/useTitle'; // <- Add this line
 
